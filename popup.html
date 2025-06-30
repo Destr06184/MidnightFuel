@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MidnightFuel</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h1>MidnightFuel</h1>
+    <div class="control-row">
+        <label for="globalToggle">Enable globally</label>
+        <label class="switch">
+            <input type="checkbox" id="globalToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="control-row">
+        <label for="siteToggle">Disable for this page</label>
+        <label class="switch">
+            <input type="checkbox" id="siteToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="control-row" id="mode-switcher-row">
+        <label for="modeToggle">Enable strict mode</label>
+        <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

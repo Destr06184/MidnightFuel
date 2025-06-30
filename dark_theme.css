@@ -1,0 +1,109 @@
+/* dark_theme.css (v8 - Финальный гибридный метод) */
+
+/* ================================================= */
+/* ============== РЕЖИМ 1: АККУРАТНЫЙ ============== */
+/* ================================================= */
+
+/* 1. Настраиваем "сцену" для нашей подложки */
+html.midnightfuel-gentle-mode body {
+    position: relative !important;
+    isolation: isolate !important; /* Изолирует фильтр подложки от контента */
+    background-color: transparent !important;
+}
+
+/* 2. Создаем саму темную подложку */
+html.midnightfuel-gentle-mode body::before {
+    content: '' !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: white !important;
+    filter: invert(0.9) hue-rotate(180deg) !important;
+}
+
+/* 3. !!! ГЛАВНОЕ ИСПРАВЛЕНИЕ !!! */
+/* Принудительно делаем все основные контейнеры сайта прозрачными,
+   чтобы через них была видна наша темная подложка. */
+html.midnightfuel-gentle-mode div,
+html.midnightfuel-gentle-mode main,
+html.midnightfuel-gentle-mode section,
+html.midnightfuel-gentle-mode header,
+html.midnightfuel-gentle-mode footer,
+html.midnightfuel-gentle-mode nav,
+html.midnightfuel-gentle-mode aside,
+html.midnightfuel-gentle-mode form,
+html.midnightfuel-gentle-mode ul,
+html.midnightfuel-gentle-mode li,
+html.midnightfuel-gentle-mode table {
+    background-color: transparent !important;
+}
+
+/* 4. Перекрашиваем текст в светлый */
+html.midnightfuel-gentle-mode body * {
+    color: #e0e0e0 !important;
+    border-color: #555 !important;
+}
+
+/* 5. Отдельно красим ссылки */
+html.midnightfuel-gentle-mode a,
+html.midnightfuel-gentle-mode a * {
+    color: #87ceeb !important;
+}
+
+/* 6. Защищаем медиа от любых случайных эффектов */
+html.midnightfuel-gentle-mode img,
+html.midnightfuel-gentle-mode video,
+html.midnightfuel-gentle-mode svg,
+html.midnightfuel-gentle-mode svg *, /* Защищаем и внутренние части SVG */
+html.midnightfuel-gentle-mode iframe {
+    filter: none !important;
+    color: initial !important; /* Возвращаем SVG иконкам исходный цвет */
+    fill: currentColor !important; /* Позволяет SVG наследовать цвет от родителя */
+}
+
+
+/* ================================================== */
+/* =============== РЕЖИМ 2: ДЕТАЛЬНЫЙ =============== */
+/* ================================================== */
+/* Этот режим остается без изменений. */
+
+html.midnightfuel-detailed-mode {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+html.midnightfuel-detailed-mode body,
+html.midnightfuel-detailed-mode div,
+html.midnightfuel-detailed-mode main,
+html.midnightfuel-detailed-mode section,
+html.midnightfuel-detailed-mode article,
+html.midnightfuel-detailed-mode header,
+html.midnightfuel-detailed-mode footer,
+html.midnightfuel-detailed-mode nav,
+html.midnightfuel-detailed-mode aside {
+    background-color: inherit !important;
+}
+
+html.midnightfuel-detailed-mode p,
+html.midnightfuel-detailed-mode span,
+html.midnightfuel-detailed-mode h1, html.midnightfuel-detailed-mode h2, html.midnightfuel-detailed-mode h3,
+html.midnightfuel-detailed-mode li, html.midnightfuel-detailed-mode strong, html.midnightfuel-detailed-mode em,
+html.midnightfuel-detailed-mode td, html.midnightfuel-detailed-mode th, html.midnightfuel-detailed-mode label {
+    color: #e0e0e0 !important;
+    text-shadow: none !important;
+    background-color: transparent !important;
+}
+
+html.midnightfuel-detailed-mode a,
+html.midnightfuel-detailed-mode a * {
+    color: #87ceeb !important;
+}
+
+html.midnightfuel-detailed-mode svg,
+html.midnightfuel-detailed-mode svg * {
+    fill: currentColor !important;
+}
