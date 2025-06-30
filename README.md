@@ -27,7 +27,7 @@ Tired of bright white websites burning your eyes out late at night? MidnightFuel
 
     *   **Enable globally:** The main switch to turn the extension on or off everywhere.
     *   **Disable for this page:** Whitelists the current website, disabling the dark theme only for it.
-    *   **Enable Detailed Mode:** Switches from the default "Gentle Mode" to the more powerful "Detailed Mode" for the current site.
+    *   **Enable Strict Mode:** Switches from the default "Gentle Mode" to the more powerful "Strict Mode" for the current site.
 
 ## How It Works: The Dual-Mode Engine
 
