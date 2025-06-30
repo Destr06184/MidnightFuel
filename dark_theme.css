@@ -1,17 +1,10 @@
-/* dark_theme.css (v8 - Финальный гибридный метод) */
 
-/* ================================================= */
-/* ============== РЕЖИМ 1: АККУРАТНЫЙ ============== */
-/* ================================================= */
-
-/* 1. Настраиваем "сцену" для нашей подложки */
 html.midnightfuel-gentle-mode body {
     position: relative !important;
-    isolation: isolate !important; /* Изолирует фильтр подложки от контента */
+    isolation: isolate !important;
     background-color: transparent !important;
 }
 
-/* 2. Создаем саму темную подложку */
 html.midnightfuel-gentle-mode body::before {
     content: '' !important;
     position: fixed !important;
@@ -24,9 +17,6 @@ html.midnightfuel-gentle-mode body::before {
     filter: invert(0.9) hue-rotate(180deg) !important;
 }
 
-/* 3. !!! ГЛАВНОЕ ИСПРАВЛЕНИЕ !!! */
-/* Принудительно делаем все основные контейнеры сайта прозрачными,
-   чтобы через них была видна наша темная подложка. */
 html.midnightfuel-gentle-mode div,
 html.midnightfuel-gentle-mode main,
 html.midnightfuel-gentle-mode section,
@@ -47,28 +37,22 @@ html.midnightfuel-gentle-mode body * {
     border-color: #555 !important;
 }
 
-/* 5. Отдельно красим ссылки */
 html.midnightfuel-gentle-mode a,
 html.midnightfuel-gentle-mode a * {
     color: #87ceeb !important;
 }
 
-/* 6. Защищаем медиа от любых случайных эффектов */
 html.midnightfuel-gentle-mode img,
 html.midnightfuel-gentle-mode video,
 html.midnightfuel-gentle-mode svg,
-html.midnightfuel-gentle-mode svg *, /* Защищаем и внутренние части SVG */
+html.midnightfuel-gentle-mode svg *,
 html.midnightfuel-gentle-mode iframe {
     filter: none !important;
-    color: initial !important; /* Возвращаем SVG иконкам исходный цвет */
-    fill: currentColor !important; /* Позволяет SVG наследовать цвет от родителя */
+    color: initial !important;
+    fill: currentColor !important;
 }
 
 
-/* ================================================== */
-/* =============== РЕЖИМ 2: ДЕТАЛЬНЫЙ =============== */
-/* ================================================== */
-/* Этот режим остается без изменений. */
 
 html.midnightfuel-detailed-mode {
     background-color: #1a1a1a !important;
