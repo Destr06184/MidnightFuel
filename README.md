@@ -43,7 +43,7 @@ This mode is a hybrid marvel. It creates a dark, filtered "backdrop" behind a we
 This mode dives deep into the website's CSS, directly changing the background colors and text colors of individual elements like `divs`, `paragraphs`, and `headers`. It's incredibly effective but can sometimes conflict with a website's own complex styles.
 
 *   **Pros:** Offers a very clean, high-contrast, and "native" dark theme look.
-*   **Cons:** May occasionally hide or misstyle elements on very complex websites.
+*   **Cons:** May hide or misstyle elements on very complex websites.
 
 ## Installation
 
