@@ -27,7 +27,7 @@ Tired of bright white websites burning your eyes out late at night? MidnightFuel
     *   **Disable for this page:** Whitelists the current website, disabling the dark theme only for it.
     *   **Enable Detailed Mode:** Switches from the default "Gentle Mode" to the more powerful "Detailed Mode" for the current site.
 
-## 🛠How It Works: The Dual-Mode Engine
+## How It Works: The Dual-Mode Engine
 
 Understanding the two modes helps you get the most out of MidnightFuel:
 
@@ -43,7 +43,7 @@ This mode dives deep into the website's CSS, directly changing the background co
 *   **Pros:** Offers a very clean, high-contrast, and "native" dark theme look.
 *   **Cons:** May occasionally hide or misstyle elements on very complex websites.
 
-## 🔧 Installation
+## Installation
 
 ### From the Chrome Web Store
 *(Link will be here once published)*
