@@ -1,4 +1,6 @@
 # MidnightFuel 
+![icon128](https://github.com/user-attachments/assets/4a27f099-6ca0-4677-93c6-7211588dfb1b)
+
 
 **Give your eyes a rest. MidnightFuel intelligently applies a dark theme to websites, reducing eye strain and improving your browsing experience at night.**
 
